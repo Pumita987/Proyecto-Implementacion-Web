@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${TituloPagina}"></title>
+<link rel="shortcut icon" type="image/png" th:href="@{/images/favicon.png}"/>
+</head>
+<body>
+	<h1 style="color: blue; text-align: center;">Título de la página</h1>
+	<div id="navegador"><!--Barra de Navegacion-->
+		<ul>
+		
+		<li><a href="/App/inicio">Inicio</a></li>
+		<li><a href="/App/Productos">Productos</a></li>
+		<li><a href="/App/Login">Login</a></li>
+		<li><a href="#">¿Quiénes somos?</a></li>
+		<li><a href="/App/CarritodeCompras">Carrito de Compras</a></li>
+		<li><a href="/App/Integrantes">Integrantes</a></li>
+		</ul>
+	</div><!-- FIN DE Barra de Navegacion-->
+	<div id="Banner"><!-- Banner-->
+		<h1>Enchufe Solar SP-092</h1>
+		<p>¿Te puedes imaginar un enchufe solar con el que puedas producir electricidad para ciertos electrodomésticos? ¿Conoces los enchufes solares de las ventanas? Si te parece interesante el tema, te recomendamos que leas este artículo.</p>
+		<!-- Aqui va una imagen--><img th:src="@{/images/Img_banner1.jpg}" width="500" height="500">
+		<button> Ver más</button><!-- FIN DEl Banner	-->
+	</div>
+	
+	
+	
+	
+		
+</body>
+</html>
