@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title >Productos</title>
+<link rel="shortcut icon" type="image/png" th:href="@{/images/favicon.png}"/>
+<link rel="stylesheet" type="text/css" th:href="@{/productos.css}"/>
+</head>
+<body>
+<div id="navegador"><!--Barra de Navegacion-->
+		<ul>
+		<li><a href="/App/inicio">Inicio</a></li>
+		<li><a href="/App/Productos">Productos</a></li>
+		<li><a href="/App/Login">Login</a></li>
+		<li><a href="#">¿Quiénes somos?</a></li>
+		<li><a href="/App/CarritodeCompras">Carrito de Compras</a></li>
+		<li><a href="/App/Integrantes">Integrantes</a></li>
+		</ul>
+	</div><!-- FIN DE Barra de Navegacion-->
+	<div class="Cuerpo"><!-- Cuerpo -->
+		<div class="titulo">
+			<h1>Catalogo de productos</h1>
+		</div>
+		<div class="campoProductosOferta">
+			<h2>Productos en oferta</h2>
+			<div class="grupoProductos">
+				<div class="campoProducto">
+					<img th:src="@{'/images/panel1.png'}" width="270" height="300">
+					<h3>name</h3>
+					<h4>precio</h4>
+				</div>
+				<div class="campoProducto">
+					<img th:src="@{'/images/panel2.jpg'}" width="270" height="300">
+					<h3>name</h3>
+					<h4>precio</h4>
+				</div>
+				<div class="campoProducto">
+					<img th:src="@{'/images/panel3.png'}" width="270" height="300">
+					<h3>name</h3>
+					<h4>precio</h4>
+				</div>
+				<div class="campoProducto">
+					<img th:src="@{'/images/panel3.png'}" width="270" height="300">
+					<h3>name</h3>
+					<h4>precio</h4>
+				</div>
+			</div>
+		</div>
+		<div class="campoMasVendidos">
+		<h2>Productos mas vendidos</h2>
+			<div class="grupoProductos">
+				<div class="campoProducto">
+					<img th:src="@{'/images/panel4.jpg'}" width="300" height="300">
+					<h3>name</h3>
+					<h4>precio</h4>
+				</div>
+				<div class="campoProducto">
+					<img th:src="@{'/images/panel5.jpg'}" width="300" height="300">
+					<h3>name</h3>
+					<h4>precio</h4>
+				</div>
+				<div class="campoProducto">
+					<img th:src="@{'/images/panel3.png'}" width="300" height="300">
+					<h3>name</h3>
+					<h4>precio</h4>
+				</div>
+				<div class="campoProducto">
+					<img th:src="@{'/images/panel6.jpg'}" width="300" height="300">
+					<h3>name</h3>
+					<h4>precio</h4>
+				</div>
+			</div>
+		</div>
+		<div class="campoInteres">
+			<h2>Te puede interesar</h2>
+			<div class="grupoProductos">
+				<div class="campoProducto">
+					<img th:src="@{'/images/panel8.jpg'}" width="300" height="300">
+					<h3>name</h3>
+					<h4>precio</h4>
+				</div>
+				<div class="campoProducto">
+					<img th:src="@{'/images/panel9.jpg'}" width="300" height="300">
+					<h3>name</h3>
+					<h4>precio</h4>
+				</div>
+				<div class="campoProducto">
+					<img th:src="@{'/images/panel3.png'}" width="300" height="300">
+					<h3>name</h3>
+					<h4>precio</h4>
+				</div>
+			</div>
+			<button>Ver más</button>
+		</div>
+	</div>
+</body>
+</html>
