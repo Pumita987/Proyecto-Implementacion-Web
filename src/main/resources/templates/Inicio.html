@@ -2,32 +2,107 @@
 <html xmlns:th="http://thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title th:text="${TituloPagina}"></title>
-<link rel="shortcut icon" type="image/png" th:href="@{/images/favicon.png}"/>
+<link rel="shortcut icon" type="image/png"
+	th:href="@{/images/favicon.png}" />
+<link rel="stylesheet" href="/css/inicio.css">
+<title>Inicio</title>
 </head>
 <body>
-	<h1 style="color: blue; text-align: center;">Título de la página</h1>
-	<div id="navegador"><!--Barra de Navegacion-->
-		<ul>
-		
-		<li><a href="/App/inicio">Inicio</a></li>
-		<li><a href="/App/Productos">Productos</a></li>
-		<li><a href="/App/Login">Login</a></li>
-		<li><a href="#">¿Quiénes somos?</a></li>
-		<li><a href="/App/CarritodeCompras">Carrito de Compras</a></li>
-		<li><a href="/App/Integrantes">Integrantes</a></li>
-		</ul>
-	</div><!-- FIN DE Barra de Navegacion-->
-	<div id="Banner"><!-- Banner-->
-		<h1>Enchufe Solar SP-092</h1>
-		<p>¿Te puedes imaginar un enchufe solar con el que puedas producir electricidad para ciertos electrodomésticos? ¿Conoces los enchufes solares de las ventanas? Si te parece interesante el tema, te recomendamos que leas este artículo.</p>
-		<!-- Aqui va una imagen--><img th:src="@{/images/Img_banner1.jpg}" width="500" height="500">
-		<button> Ver más</button><!-- FIN DEl Banner	-->
+	<div class="container">
+		<!-- Encabezado -->
+		<header>
+			<div class="container-logo">
+				<section id="logo">
+					<img th:src="@{'/images/Dark.png'}" alt="Logo">
+				</section>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="/App/inicio">Inicio</a></li>
+					<li><a href="/App/Productos">Productos</a></li>
+					<li><a href="/App/Login">Login</a></li>
+					<li><a href="#">¿Quiénes somos?</a></li>
+					<li><a href="/App/CarritodeCompras">Carrito de Compras</a></li>
+					<li><a href="/App/Integrantes">Integrantes</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Información -->
+		<div class="informacion">
+			<div class="fila">
+				<!-- columna izquierda -->
+				<div class="col">
+					<h1 id="nombre">
+						Enchufe Solar <br> SP 0-92
+					</h1>
+					<p id="introduccion">¿Te puedes imaginar un enchufe solar con
+						el que puedas producir electricidad para ciertos
+						electrodomésticos? ¿Conoces los enchufes solares de las ventanas?
+						Si te parece interesante el tema, te recomendamos que leas este
+						artículo.</p>
+					<button>Ver más</button>
+				</div>
+
+				<!-- Columna derecha -->
+				<div class="col imagen">
+					<div class="imagen-principal" id="imagen">
+						<img th:src="@{'/images/enchufe.png'}" alt="" id="imagenPrincipal">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="rectangulo">
+			<!-- Columna izquierda -->
+			<div class="colum">
+				<h2 id="nombre">Cumpliendo Objetivos...</h2>
+				<p id="descripcion">Los Objetivos de Desarrollo Sostenible (ODS)
+					constituyen un llamamiento universal a la acción para poner fin a
+					la pobreza, proteger el planeta y mejorar las vidas y las
+					perspectivas de las personas en todo el mundo.</p>
+			</div>
+
+			<!-- Columna derecha -->
+			<div class="colum-imagen">
+				<div class="logos-principales" id="logos">
+					<img th:src="@{'/images/Logo1.png'}" alt="" id="Logo1"> <img
+						th:src="@{'/images/Logo2.png'}" alt="" id="Logo2"> <img
+						th:src="@{'/images/Logo3.png'}" alt="" id="Logo3"> <img
+						th:src="@{'/images/Logo4.png'}" alt="" id="Logo4"> <img
+						th:src="@{'/images/Logo5.png'}" alt="" id="Logo5"> <img
+						th:src="@{'/images/Logo6.png'}" alt="" id="Logo6"> <img
+						th:src="@{'/images/Logo7.png'}" alt="" id="Logo7">
+				</div>
+			</div>
+		</div>
+
+		<div class="servicios">
+			<h3 id="nombre">Nuestros Servicios</h3>
+			<div class="opcion">
+				<div class="cuadrado color1">
+					<img th:src="@{'/images/isvc1.png'}" alt="">
+				</div>
+				<h4>Productos</h4>
+				<p>Cargadores Solares, paneles, molinos eólicos y más...</p>
+			</div>
+			<div class="opcion">
+				<div class="cuadrado color2">
+					<img th:src="@{'/images/isvc2.png'}" alt="">
+				</div>
+				<h4>Mantenimiento y Asistencia</h4>
+				<p>Si tienes algún problema con u producto relacionado a energía
+					renovable, nosotros podemos ayudarte.</p>
+			</div>
+			<div class="opcion">
+				<div class="cuadrado color3">
+					<img th:src="@{'/images/iscv3.png'}" alt="">
+				</div>
+				<h4>Contáctanos</h4>
+				<p>Si tienes alguna duda o quieres sumarte al equipo, comunícate
+					con nosotros para poder ayudarte.</p>
+			</div>
+		</div>
 	</div>
-	
-	
-	
-	
-		
 </body>
 </html>
