@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <link rel="shortcut icon" type="image/png" th:href="@{/images/favicon.png}"/>
+<link rel="stylesheet" type="text/css" th:href="@{/css/Integrantes.css}" />
 <title>Integrantes</title>
 </head>
 <body>
-
+	<div class="container">
+		<!--Barra de Navegacion-->
+		<header>
+			<div class="container-logo">
+				<section id="logo">
+					<img th:src="@{'/images/Dark.png'}" alt="Logo">
+				</section>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="/App/inicio">Inicio</a></li>
+					<li><a href="/App/Productos">Productos</a></li>
+					<li><a href="/App/Login">Login</a></li>
+					<li><a href="#">¿Quiénes somos?</a></li>
+					<li><a href="/App/CarritodeCompras">Carrito de Compras</a></li>
+					<li><a href="/App/Integrantes">Integrantes</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
 	<h1>Integrantes</h1>
 	<div>
 		<ul>
