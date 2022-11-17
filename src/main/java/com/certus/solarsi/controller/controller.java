@@ -41,6 +41,11 @@ public class controller {
 	
 		return "Productos";
 	}
+	@GetMapping("/Register")
+	public String Registrarse() {
+	
+		return "Register";
+	}
 	
 	@GetMapping("/CarritodeCompras")
 	public String CarritodeCompras() {

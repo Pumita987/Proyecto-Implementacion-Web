@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Login</title>
 <link rel="shortcut icon" type="image/png" th:href="@{/images/favicon.png}"/>
-<link rel="stylesheet" href="/css/Form.css">
+<link rel="stylesheet" type="text/css" href="/css/Form.css" > <!--  --> 
+<script type="text/javascript" th:src="@{/js/form.js}"></script>
 </head>
 <body>
 <div class="contenedor">
@@ -28,29 +29,20 @@
 			</header>
 		</div>
 		<div class="body22">
-<div class="container " id="container"> <!-- Para intercambiar las páginas se debe agregar "right-panel-active" para el Registro o quitar para el Login-->
+<div class="container right-panel-active" id="container"> <!-- Para intercambiar las páginas se debe agregar "right-panel-active" para el Registro o quitar para el Login-->
 	<div class="form-container sign-up-container">
 		<form action="#">
-			<h1>Create Account</h1>
+			<h1>Crear una cuenta</h1>
 			<br>
-			<input type="text"required autocomplete="off" placeholder="Name" />
-			<input type="email"required autocomplete="off" placeholder="Email" />
-			<input type="password"required autocomplete="off" placeholder="Password" />
-			<button>Sign Up</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<h1>Iniciar Sesión</h1>
-			<br><br>
-			
-		
+			<input type="text"required autocomplete="off" placeholder="Nombres" />
+			<input type="text"required autocomplete="off" placeholder="DNI" />
 			<input type="email"required autocomplete="off" placeholder="E-mail" />
 			<input type="password"required autocomplete="off" placeholder="Contraseña" />
-			<a href="#">¿Olvidaste tu contraseña?</a>
-			<button>Iniciar Sesión</button>
+			<br>
+			<button>Registrarse</button>
 		</form>
 	</div>
+
 	<div class="overlay-container">
 		<div class="overlay">
 			<div class="overlay-panel overlay-left">
@@ -62,14 +54,17 @@
 			</div>
 			<div class="overlay-panel overlay-right">
 				<h1>Hola!</h1>
-				<p>Ingresa tus datos personales y comienza tu viaje con nosotros</p>
+				<p>Ingresa tus datos personales y comienza tu viaje con nosotros.</p>
 				<a href="/App/Register"><button class="ghost" id="signIn" >Registrarse</button> </a>
 			</div>
 		</div>
 	</div>
 </div>
+
+
+<script src="https://kit.fontawesome.com/94e06964eb.js" crossorigin="anonymous"></script>
 </div>
-		<footer class="piePage">
+<footer class="piePage">
 		<div class="grupo--1">
 			<div class="box-footer"><figure>
 				<a href="#"><img src="/images/logo_sin_fondo.png" alt=""></a>
@@ -90,7 +85,5 @@
 	<div class="grupo--2"><small>&copy; 2022 <b>Solarsi</b> - Todos los derechos reservados</small></div>
 
 	</footer>
-	<script src="https://kit.fontawesome.com/94e06964eb.js" crossorigin="anonymous"></script>
-	
 </body>
 </html>
